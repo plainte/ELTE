@@ -79,7 +79,6 @@ namespace mySpace {
     if (max.has_value()) {
       return max.value();
     }
-    std::cout << "Set is empty\n";
     return {};
   }
 
