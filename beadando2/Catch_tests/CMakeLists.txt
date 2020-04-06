@@ -1,0 +1,2 @@
+add_executable(Catch_tests_run FCA_tests.cpp)
+target_link_libraries(Catch_tests_run Fishing_competition_analyzer_lib)
