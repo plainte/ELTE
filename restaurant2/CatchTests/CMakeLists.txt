@@ -1,0 +1,2 @@
+add_executable(CatchTests_run RATests.cpp)
+target_link_libraries(CatchTests_run RestaurantAnalyzer_lib)
