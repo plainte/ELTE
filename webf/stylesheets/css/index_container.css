@@ -1,0 +1,15 @@
+.container#brief_intro {
+  width: 450px;
+  height: auto;
+  bottom: 300px;
+  margin: 0 100px;
+  opacity: 0.7;
+}
+
+.container#summary p {
+  padding: 0.3em;
+}
+
+.carousel p {
+  font-size: 15px;
+}

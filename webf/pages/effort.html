@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Load the Twitch embed script -->
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../stylesheets/css/style.css">
+  <link rel="stylesheet" href="../stylesheets/css/player_container.css">
+  <link rel="stylesheet" href="../stylesheets/css/calendar.css">
+  <link rel="stylesheet" href="../stylesheets/css/buttons.css">
+  <title>T1 Effort twitch stream</title>
+</head>
+<body class="bg-secondary">
+<!-- nNv bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../images/t1banner.jpg" width="200" height="auto" alt="T1 banner">
+    T1 Streams
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./faker.html">T1 Faker</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./teddy.html">T1 Teddy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./cuzz.html">T1 Cuzz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./canna.html">T1 Canna</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./effort.html">T1 Effort<span class="sr-only">(current)</span></a>
+      </li>
+      <!-- Rounded switch -->
+      <li class="nav-item">
+        <label id="switch" class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Calendar -->
+<script src="../scripts/calendar.js"></script>
+<!-- Socials -->
+<div class="socials">
+  <a class="twitter" target="_blank" title="Follow T1 Effort on Twitter" href="https://twitter.com/t1effort"><img alt="Follow T1 Effort on twitter" src="../images/twitter.png"></a>
+  <a class="twitch" target="_blank" title="Follow T1 Effort on Twitch" href="https://www.twitch.tv/effort"><img alt="Follow T1 Effort on Twitch" src="../images/twitch.png"></a>
+  <a class="facebook" target="_blank" title="Follow T1 on Facebook" href="https://www.facebook.com/T1LoL/"><img alt="Follow T1 on Facebook" src="../images/fb.png"></a>
+</div>
+<!-- Summary -->
+<div class="container" id="summary">
+  <img id="summary_img" src="../images/effort.jpg" alt="Effort">
+	<p> Lee "Effort" Sang-ho (Hangul: 이상호) is a League of Legends esports player, currently support for T1.
+  </p>
+</div>
+<!-- Twitch Embed -->
+<div id="twitch-content">
+  <div id="twitch-panel">
+    <iframe id="twitch-iframe"
+            src="https://player.twitch.tv/?channel=effort&muted=true&autoplay=true"
+            allowfullscreen="true">
+    </iframe>
+  </div>
+</div>
+<!-- Optional JavaScript -->
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/dynamic_calendar.js"></script>
+<script src="../scripts/scroll_btn.js"></script>
+</body>
+</html>
