@@ -1,0 +1,111 @@
+#button {
+  background-color: #e2012d;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .content {
+    width: 100%;
+  }
+
+  #button {
+    margin: 30px;
+  }
+}
+
+.socials > * {
+  display: inline-block;
+  position: fixed;
+  max-width: 100%;
+  height: auto;
+  animation: shake .8s ease-in;
+  left: 80px;
+}
+
+.twitter {
+  top: 35%;
+}
+
+.twitter:hover {
+  animation: inherit;
+  transform: scale(1.5);
+}
+
+.twitch {
+  top: 45%;
+}
+
+.twitch:hover {
+  animation: inherit;
+  transform: scale(1.5);
+}
+
+.facebook {
+  top: 55%;
+}
+
+.facebook:hover {
+  animation: inherit;
+  transform: scale(1.5);
+}
+
+@keyframes shake{
+  0%{
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80%{
+    transform: translate(.8em);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  }
+  10%,
+  30%,
+  50%{
+    transform: translate(-.2em);
+  }
+  70%,
+  100%{
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+    .socials {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container#brief_intro {
+        display: none !important;
+    }
+}

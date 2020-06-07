@@ -1,0 +1,16 @@
+.table-responsive {
+  border-radius: 8px;
+  font-size: medium;
+}
+
+#table0 {
+  display: inline-block;
+  max-width: 600px;
+  margin-left: 15%;
+}
+
+#table1 {
+  float: right;
+  margin-right: 15%;
+  max-width: 400px;
+}
